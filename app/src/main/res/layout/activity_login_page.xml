@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/android_lar"
+    tools:context=".LoginPage">
+
+    <RelativeLayout
+        android:id="@+id/plugin_icon"
+        android:layout_width="308dp"
+        android:layout_height="414dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/plugin_icon"
+        android:clipToOutline="true"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="26dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-24sp"
+            android:textColor="#38C8A5"
+            android:text="Login"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/email_login"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="113dp"
+            android:layout_marginEnd="45dp"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="Email"
+            android:textColorHint="#38C8A5"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/mail"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="103dp"
+            android:background="@drawable/email">
+
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/icon_lock_p"
+            android:layout_width="39.79dp"
+            android:layout_height="45.51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="193dp"
+            android:background="@drawable/vector_lock_password"
+            android:elevation="4dp">
+
+        </ImageView>
+
+        <View
+            android:id="@+id/vector_1"
+            android:layout_width="263dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/email_login"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/vector" />
+
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vector_1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="46dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#38C8A5"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/vector_2"
+            android:layout_width="263dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/password_login"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/vector" />
+        <TextView
+            android:id="@+id/forgot_your"
+            android:layout_width="172dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="259dp"
+            android:text="forgot your password ?"
+            android:textColor="#38C8A5"
+            android:gravity="top"
+            />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="149dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/forgot_your"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textAllCaps="false"
+            android:layout_marginLeft="86dp"
+            android:text="Login"
+            android:layout_marginTop="288dp"
+            android:backgroundTint="#38C8A5"
+            android:elevation="4dp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="126dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="171dp"
+            android:layout_marginTop="383dp"
+            android:gravity="top"
+            android:text="register here"
+            android:textColor="#38C8A5" />
+
+        <TextView
+            android:id="@+id/create_an_a"
+            android:layout_width="141dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="384dp"
+            android:gravity="top"
+            android:text="create an account ?"
+            android:textColor="#38C8A5" />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage"
+    android:clipToOutline="true"
+    android:background="@drawable/android_lar">
+
+    <RelativeLayout
+        android:id="@+id/plugin_icon"
+        android:layout_width="308dp"
+        android:layout_height="414dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/plugin_icon"
+        android:clipToOutline="true"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="42dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-24sp"
+            android:text="Register"
+            android:textColor="#38C8A5"
+            android:textSize="32sp"
+            tools:ignore="InvalidId" />
+
+
+        <EditText
+            android:id="@+id/email_register"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#38C8A5"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/vector_2"
+            android:layout_width="263dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/email_register"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/vector" />
+
+        <EditText
+            android:id="@+id/password_register"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vector_2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#38C8A5"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/vector_3"
+            android:layout_width="263dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/password_register"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/vector" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="149dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/vector_3"
+            android:layout_alignParentLeft="true"
+            android:textAllCaps="false"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="55dp"
+            android:text="Register"
+            android:elevation="4dp"
+            android:backgroundTint="#38C8A5">
+
+        </Button>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

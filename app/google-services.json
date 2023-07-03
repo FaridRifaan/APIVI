@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491764470660",
+    "project_id": "apivi-account",
+    "storage_bucket": "apivi-account.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491764470660:android:72ca7442479027c19d43d1",
+        "android_client_info": {
+          "package_name": "com.example.demoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491764470660-6qjvbr2krj25d13rs60291i3acstupu3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.demoapp",
+            "certificate_hash": "03d3dbc23b319e714bf9891a7640414be30c30e7"
+          }
+        },
+        {
+          "client_id": "491764470660-uaqousjqfhgf88i7j4ujlr8qn2llqea7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIhq8Q5ipnI75yvPvMFjYhOh9IB0JIwiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491764470660-uaqousjqfhgf88i7j4ujlr8qn2llqea7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

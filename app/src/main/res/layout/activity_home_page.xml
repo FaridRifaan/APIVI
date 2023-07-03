@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    tools:ignore="ExtraText">
+
+
+    <RelativeLayout
+        android:id="@+id/bars_status"
+        android:layout_width="411dp"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="96dp"
+        android:background="#49E7AE"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/rectangle_4"
+        android:layout_width="323dp"
+        android:layout_height="165dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_about"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bars_status">
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/rectangle_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="297dp"
+        android:layout_marginBottom="1dp"
+        android:background="#49E7AE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/home_circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="62dp"
+            android:background="@drawable/home"
+            >
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/camera_circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="79dp"
+            android:background="@drawable/camera_circle"
+            android:onClick="takePhoto"
+            app:layout_constraintEnd_toEndOf="@+id/home_circle">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/account_circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/account_circle">
+
+        </ImageButton>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

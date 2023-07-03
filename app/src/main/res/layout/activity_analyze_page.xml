@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalyzePage">
+
+    <ImageView
+        android:id="@+id/gambar_analisa"
+        android:layout_width="304dp"
+        android:layout_height="398dp"
+        android:src="@drawable/cric_393"
+        app:layout_constraintBottom_toTopOf="@+id/nav_btm_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318"></ImageView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_btm_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="1dp"
+        android:background="#49E7AE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/icon_qr_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="39.79dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/qr_scan">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/icon_image"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/icon_qr_scan"
+            android:background="@drawable/ic_camera"
+            android:elevation="4dp"
+            android:paddingHorizontal="30dp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/galeri_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/icon_image"
+            android:background="@drawable/ic_galeri"
+            android:elevation="4dp">
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
